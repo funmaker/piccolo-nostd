@@ -849,8 +849,8 @@ where
     }
 
     fn peek(&mut self, n: usize) -> Result<Option<u8>, LexError> {
-        self.peek_count = (n + 1).max(self.peek_count).min(self.source.len());
-        Ok(self.source.get(n).copied())
+	    self.peek_count = (n + 1).max(self.peek_count).min(self.source.len());
+	    Ok(self.source.get(n).copied())
     }
 
     fn advance(&mut self, n: usize) {
