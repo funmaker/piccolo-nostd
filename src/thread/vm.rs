@@ -1,3 +1,4 @@
+use alloc::borrow::ToOwned;
 use allocator_api2::vec;
 use gc_arena::allocator_api::MetricsAlloc;
 
